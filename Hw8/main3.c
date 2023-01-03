@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
-    int i=6;
+void get_binary(int i){
     int k=0;
     int y=0;
     while(i>0){
@@ -18,7 +16,12 @@ int main()
             k++;
             i=i/2;
         }
-    }
-    printf("%08d",y);
+    }printf("%08d",y);
+}
+int main()
+{
+    int i=6;
+    get_binary(i);
+    
     return 0;
 }
