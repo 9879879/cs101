@@ -1,14 +1,13 @@
-#include <stdio.h>
-#include <math.h>
-
-int main(){
-    int n = 1234;
-    int arry[10],i;
-    for(int i=0;i<=3;i++){
-        arry[i]=n/(int)pow(10,i)%10;
+#include<stdio.h>
+int main()
+{
+    int n=156156;
+    int sum=0;
+       
+        while(n!=0){
+        sum=sum*10+n%10;
+        n/=10;
     }
-    for(i = 0; i < 4; i++){
-        printf("%d",arry[i]);
-    }
+    printf("正整數倒轉:%d\n",sum);
     return 0;
 }
